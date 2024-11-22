@@ -10,15 +10,18 @@ To write a program to implement the Decision Tree Classifier Model for Predictin
 ## Algorithm:
 
 ## Algorithm
-1.Import the required libraries.
-
-2.Upload and read the dataset.
-
-3.Check for any null values using the isnull() function.
-
-4.From sklearn.tree import DecisionTreeClassifier and use criterion as entropy.
-
-5.Find the accuracy of the model and predict the required values by importing the required module from sklearn. 
+1. Import necessary libraries.
+2. Load the employee dataset using pandas.
+3. Preview the dataset using .head() and inspect its structure with .info().
+4. Check for missing values using .isnull().sum() and analyze the target variable distribution.
+5. Encode categorical variables (e.g., salary) using LabelEncoder.
+6. Define features (x) and target (y) for the model.
+7. Split the dataset into training and testing sets using train_test_split().
+8. Create a DecisionTreeClassifier instance with the entropy criterion.
+9. Train the model on the training data using .fit().
+10. Predict the target variable for the test data using .predict().
+11. Calculate the model's accuracy using accuracy_score().
+12. Test the model with new input data to predict churn.
 
 
 ## Program:
